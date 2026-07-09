@@ -42,27 +42,20 @@
             <br>
             <h2 id="about">About Me</h2>
             <p class="main-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.
+                My name is Cameron Abshear and I am an aspiring game developer. I am a competetive rock climber and have
+                been for the last decade, and love getting outside as much as possible, even if it's not for climbing. I
+                am currently working my way through the Tech Academy's Game Developer Bootcamp, in fact this webpage
+                started as an assignment for the html section of that course.
             </p>
             <br>
             <img src="images/python-code.png" alt="a photo of a python script in VS code" class="picture">
             <br>
             <p class="main-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex
-                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit
-                anim id est laborum.
+                In terms of actual code experience, I have worked with HTML and CSS(such as this page), Python, C#, and
+                have am familiar with the Unity game engine. I will be learning the basics and getting some hands on
+                experience with Javascript, C++, and the Unreal Engine over the course that I'm finishing, as well as
+                getting a more thorough look through C# and Unity.
+                I look forward to being able to update this page as I learn more.
             </p>
         </section>
         <!--MY INFO-->
@@ -70,27 +63,44 @@
             <h2>My Info</h2>
             <div class="row">
                 <!--GITHUB-->
-                <div class="column-left github">
-                    <h3>My Git Hub</h3>
-                    <p>
-                        You can check out my GitHub profile and some of my work by clicking on the image below:
-                    </p>
-                    <br>
-                    <a href="https://github.com/UnstableBrute"><img src="images/github-logo.png" alt="the GitHub Logo"
-                            class="gh-logo"></a>
+                <div class="column-left">
+                    <div class="github">
+                        <h3>My Git Hub</h3>
+                        <p>
+                            You can check out my GitHub profile and some of my work by clicking on the image below:
+                        </p>
+                        <br>
+                        <div class="gh-logo-container">
+                            <a href="https://github.com/UnstableBrute" target="_blank"><img src="images/github-logo.png" alt="the GitHub Logo" class="gh-logo"></a>
+                        </div>
+                    </div>
                 </div>
                 <!--CONTACT-->
-                <div class="column-right contact">
-                    <h3>Contact Me</h3>
-                    <p>Feel free to reach out to me by filling out some information below!</p>
-                    <br>
-                    <form>
-                        <input type="text" placeholder="Type your name here:">
-                        <input type="email" placeholder="Type your email here:">
-                        <input type="text" placeholder="Type your message here:">
+                <div class="column-right">
+                    <div class="contact">
+                        <h3>Contact Me</h3>
+                        <p>
+                            If you have any questions, feel free to reach out to me by filling out some information below, and I'll try to get back to you as soon as I can!
+                        </p>
                         <br>
-                        <input type="submit" value="SUBMIT">
-                    </form>
+                        <form action="https://formspree.io/f/xwvdrepd" method="post">
+                            <label>Name:</label>
+                            <br>
+                            <textarea placeholder="Type your name here:" id="name-input"></textarea>
+                            <br>
+                            <br>
+                            <label>Email:</label>
+                            <br>
+                            <input type="email" placeholder="Type the email that you want me to respond to here:" id="email-input">
+                            <br>
+                            <br>
+                            <label>Message:</label>
+                            <br>
+                            <textarea placeholder="Type your question/message here:" id="message-input"></textarea>
+                            <br>
+                            <input type="submit" value="SUBMIT">
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
