@@ -1,5 +1,6 @@
 # My Portfolio
-The purpose of this page is to show:
+This page is my coding portfolio that goes over:
 * a little bit about me
-* some of my past projects
-* my experience and diversity of knowlegde of code
+* my experience and capabilities as a developer
+* links to some of my work
+* a way to get in contact with me
