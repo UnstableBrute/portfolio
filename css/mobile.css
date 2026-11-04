@@ -1,0 +1,161 @@
+/*screen < 1800px*/
+@media screen and (max-width: 1800px) {
+    .picture{
+        width: 50%;
+    }
+    .ghLogoContainer{
+        width: 60%;
+    }
+}
+
+/***TABLET SIZING***/
+
+/*screen < 1200px*/
+@media screen and (max-width: 1200px) {
+    .picture{
+        width: 65%;
+    }
+    .ghLogoContainer{
+        width: 75%;
+    }
+    .ghLogo:hover{
+    transform: scale(1.05);
+    }
+    textarea, input[type="email"]{
+        max-width: 800px;
+    }
+}
+
+/*screen < 1024px*/
+@media screen and (max-width: 1024px) {
+    .picture{
+        width: 75%;
+    }
+    .mainText{
+        width: 80%;
+    }
+    h2{
+        margin-top: 40px;
+    }
+    .ghLogoContainer{
+        width: 60%;
+    }
+    .columnLeft, .columnRight{
+    float: left;
+    width: 100%;
+    }
+    textarea, input[type="email"]{
+        margin: 10px 0;
+        max-width: 872px;
+    }
+}
+
+/*screen < 900px*/
+@media screen and (max-width: 900px) {
+    textarea, input[type="email"]{
+        max-width: 750px;
+    }
+}
+
+/*screen < 780px*/
+@media screen and (max-width: 780px) {
+    textarea, input[type="email"]{
+        max-width: 650px;
+    }
+}
+
+/*screen < 680px*/
+@media screen and (max-width: 680px) {
+    textarea, input[type="email"]{
+        max-width: 565px;
+    }
+}
+
+/***MOBILE SIZING***/
+
+/*screen < 600px*/
+@media screen and (max-width: 600px) {
+    h1{
+        font-size: 1.5em;
+    }
+    #headerLine{
+        width: 90%;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+    h3{
+        font-size: 1em;
+    }
+    textarea, input[type="email"]{
+        max-width: 498px;
+        padding: 3px;
+    }
+}
+
+/*screen < 522px*/
+@media screen and (max-width: 522px) {
+    header{
+        margin: 40px auto 20px auto;
+    }
+    h1{
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+    .navLink{
+        font-size: 1em;
+    }
+    .navContainer{
+        width: 71px;
+    }
+    h2{
+        font-size: 1em;
+    }
+    h3{
+        font-size: 0.8em;
+    }
+    p{
+        font-size: 0.8em;
+    }
+    br{
+        line-height: 15px;
+    }
+    label{
+        font-size: 0.8em;
+    }
+    textarea, input[type="email"]{
+        font-size: 0.8em;
+        max-width: 432;
+    }
+    input[type="submit"]{
+        font-size: 1em;
+        margin-top: 20px;
+        padding: 10px;
+    }
+}
+
+/*screen < 456px*/
+@media screen and (max-width: 456px) {
+    textarea, input[type="email"]{
+        max-width: 375px;
+    }
+}
+
+/*screen < 400px*/
+@media screen and (max-width: 400px) {
+    textarea, input[type="email"]{
+        max-width: 328px;
+    }
+    .ghLogoContainer{
+        width: 75%;
+    }
+}
+
+/*screen < 350px*/
+@media screen and (max-width: 350px) {
+    textarea, input[type="email"]{
+        max-width: 285px;
+    }
+}
+
+/*I don't want to keep fixing this weird bug on narrower screens, so the narrowest it is cleanly operational is 320px*/

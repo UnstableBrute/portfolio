@@ -28,16 +28,18 @@ html{
 /***STARTUP ANIMATION***/
 
 /**header animation**/
-/*want an animation of the title being 'typed' after you open the page, however i fear i might need to wait unitl javascript to do that*/
 
-/*animation for the rest of the page to appear on screen*/
-#rest-of-it{
-    animation: float-up 3.5s ease;
+.restOfIt{
+    opacity: 0;
 }
 
-@keyframes float-up{
+/*animation for the rest of the page to appear on screen*/
+.bodyAnimation{
+    animation: floatUp 3.5s ease-out forwards;
+}
+
+@keyframes floatUp{
     from{
-        opacity: 0;
         transform: translateY(500px);
     }
     to{
@@ -50,6 +52,7 @@ html{
 
 body{
     background-color: var(--background);
+    margin: 0;
 }
 
 
@@ -71,12 +74,23 @@ h1{
     cursor: default;
 }
 
-#header-line{
+#headerLine{
     display: block;
     height: 3px;
     width: 550px;
     margin-right: auto;
     margin-left: auto;
+}
+
+/**cursor animation**/
+#blinkCursor{
+    animation: blink 1.8s ease infinite;
+}
+
+@keyframes blink{
+    0%, 38%{opacity: 1;}
+    58%, 80%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 /**h2**/
@@ -101,8 +115,8 @@ h3{
 nav{
     position: sticky;
     top: 0;
-    margin-left: -8px;
-    margin-right: -8px;
+    width: 100%;
+    z-index: 999;
     background-color: var(--background);
     animation: nav-color linear both;
     animation-timeline: scroll();
@@ -124,7 +138,7 @@ nav{
     cursor: default;
 }
 
-.nav-container{
+.navContainer{
     display: inline-block;
     text-align: center;
     margin: 15px;
@@ -132,7 +146,7 @@ nav{
 }
 
 /**nav text**/
-.nav-link{
+.navLink{
     font-family: var(--header-font);
     font-size: 18px;
     text-decoration: none;
@@ -142,7 +156,7 @@ nav{
 }
 
 /**text underline**/
-.nav-line{
+.navLine{
     display: block;
     height: 2px;
     width: 0px;
@@ -152,7 +166,7 @@ nav{
 }
 
 /*makes line appear when hovering over the textlink*/
-.nav-link:hover + .nav-line{
+.navLink:hover + .navLine{
     width: 100%;
     transition: 1s ease;
 }
@@ -165,7 +179,7 @@ p{
     font-family: var(--main-font);
 }
 
-.main-text{
+.mainText{
     display: block;
     width: 60%;
     margin-left: auto;
@@ -198,7 +212,7 @@ br{
     width: 100%;
 }
 
-.column-left, .column-right{
+.columnLeft, .columnRight{
     float: left;
     width: 50%;
 }
@@ -217,13 +231,13 @@ br{
 /**GitHub logo**/
 
 /*container so that the margins of the image aren't clickable as a hyperlink*/
-.gh-logo-container{
+.ghLogoContainer{
     width: 35%;
     margin-right: auto;
     margin-left: auto;
 }
 
-.gh-logo{
+.ghLogo{
     border: 5px solid var(--secondary-color);
     border-radius: 50px;
     display: block;
@@ -231,7 +245,7 @@ br{
     transition: 0.5s ease;
 }
 
-.gh-logo:hover{
+.ghLogo:hover{
     transform: scale(1.1);
     border-color: var(--third-color);
     transition: 0.5s ease;
@@ -251,7 +265,6 @@ br{
     text-align: center;
 }
 
-
 /**labels**/
 label{
     font-family: var(--header-font);
@@ -262,6 +275,7 @@ label{
 /**text boxes**/
 textarea, input[type="email"]{
     width: 100%;
+    max-width: 1200px;
     display: block;
     height: auto;
     margin: 10px auto;
@@ -312,21 +326,29 @@ input[type="submit"]:hover{
     transition: 0.5s ease;
 }
 
+/**validation message**/
+#validateMsg{
+    color: red;
+    text-align: center;
+}
+
 
 /***FOOTER***/
 
 /**general footer**/
 footer{
-    margin: 30px -8px -15px -8px;
+    margin: 30px 0px 0px 0px;
     background-color: var(--second-background);
-    width: 101%;
+    width: 100%;
     text-align: center;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 /**foooter text**/
-footer p{
+footer a{
+    font-family: var(--main-font);
     font-weight: 600;
     color: var(--secondary-color);
+    text-decoration: none;
 }
