@@ -149,6 +149,16 @@
     .ghLogoContainer{
         width: 75%;
     }
+    #thanksMsg{
+        width: 250px;
+        height: 170px;
+    }
+    .thanksExit{
+        font-size: 30px;
+    }
+    .thanksText{
+        font-size: 18px;
+    }
 }
 
 /*screen < 350px*/
