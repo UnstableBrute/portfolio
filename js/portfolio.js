@@ -13,7 +13,6 @@ var modal = document.getElementById("thanksModal");
 async function typeTitleEffect(){
     for(i = 0; i <= headerText.length; i ++){
         typeText = headerText.slice(0, i);
-        console.log(typeText);
         header.innerHTML = typeText + "<span id='blinkCursor'>|</span>";
         await sleep(225);
     }
