@@ -6,30 +6,32 @@
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="refresh" content="0; url=#">
     <title>Portfolio</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/portfolio.css" rel="stylesheet">
+    <link href="css/mobile.css" rel="stylesheet">
+    <script src="js/portfolio.js" defer></script>
 </head>
 
 <body>
     <!--HEADER-->
     <header>
-        <h1 id="header-text">Cameron Abshear's Portfolio</h1>
-        <img src="images/line.png" alt="a decorative line" id="header-line">
+        <h1 id="headerText"></h1></h1>
+        <img src="images/line.png" alt="a decorative line" id="headerLine">
     </header>
-    <div id="rest-of-it">
+    <div class="restOfIt">
         <!--NAVBAR-->
         <nav>
             <div class="navbar">
-                <div class="nav-container">
-                    <a href="#" class="nav-link">Home</a>
-                    <img src="images/line.png" alt="a decorative line" class="nav-line">
+                <div class="navContainer">
+                    <a href="#" class="navLink">Home</a>
+                    <img src="images/line.png" alt="a decorative line" class="navLine">
                 </div>
-                <div class="nav-container">
-                    <a href="#about" class="nav-link">About Me</a>
-                    <img src="images/line.png" alt="a decorative line" class="nav-line">
+                <div class="navContainer">
+                    <a href="#about" class="navLink">About Me</a>
+                    <img src="images/line.png" alt="a decorative line" class="navLine">
                 </div>
-                <div class="nav-container">
-                    <a href="#info" class="nav-link">My Info</a>
-                    <img src="images/line.png" alt="a decorative line" class="nav-line">
+                <div class="navContainer">
+                    <a href="#info" class="navLink">My Info</a>
+                    <img src="images/line.png" alt="a decorative line" class="navLine">
                 </div>
             </div>
         </nav>
@@ -41,63 +43,59 @@
                 class="picture">
             <br>
             <h2 id="about">About Me</h2>
-            <p class="main-text">
-                My name is Cameron Abshear and I am an aspiring game developer. I am a competetive rock climber and have
-                been for the last decade, and love getting outside as much as possible, even if it's not for climbing. I
-                am currently working my way through the Tech Academy's Game Developer Bootcamp, in fact this webpage
-                started as an assignment for the html section of that course.
+            <p class="mainText">
+                My name is Cameron Abshear and I am an aspiring game developer. I am a competetive rock climber and have been for the last decade, and love getting outside as much as possible, even if it's not for climbing. I am currently working my way through the Tech Academy's Game Developer Bootcamp, in fact this webpage started as an assignment for the html section of that course.
             </p>
             <br>
             <img src="images/python-code.png" alt="a photo of a python script in VS code" class="picture">
             <br>
-            <p class="main-text">
-                In terms of actual code experience, I have worked with HTML and CSS(such as this page), Python, C#, and
-                have am familiar with the Unity game engine. I will be learning the basics and getting some hands on
-                experience with Javascript, C++, and the Unreal Engine over the course that I'm finishing, as well as
-                getting a more thorough look through C# and Unity.
+            <p class="mainText">
+                In terms of actual code experience, I have worked with HTML and CSS(such as this page), Python, C#, Javascript, and have am familiar with the Unity game engine. I will be learning the basics and getting some hands on experience with C++, and the Unreal Engine over the course that I'm finishing, as well as getting a more thorough look through C# and Unity.
                 I look forward to being able to update this page as I learn more.
             </p>
         </section>
         <!--MY INFO-->
         <section id="info">
+            <br>
             <h2>My Info</h2>
             <div class="row">
                 <!--GITHUB-->
-                <div class="column-left">
+                <div class="columnLeft">
                     <div class="github">
                         <h3>My Git Hub</h3>
                         <p>
                             You can check out my GitHub profile and some of my work by clicking on the image below:
                         </p>
                         <br>
-                        <div class="gh-logo-container">
-                            <a href="https://github.com/UnstableBrute" target="_blank"><img src="images/github-logo.png" alt="the GitHub Logo" class="gh-logo"></a>
+                        <div class="ghLogoContainer">
+                            <a href="https://github.com/UnstableBrute" target="_blank"><img src="images/github-logo.png" alt="the GitHub Logo" class="ghLogo"></a>
                         </div>
                     </div>
                 </div>
                 <!--CONTACT-->
-                <div class="column-right">
+                <div class="columnRight">
                     <div class="contact">
                         <h3>Contact Me</h3>
                         <p>
                             If you have any questions, feel free to reach out to me by filling out some information below, and I'll try to get back to you as soon as I can!
                         </p>
                         <br>
-                        <form action="https://formspree.io/f/xwvdrepd" method="post">
+                        <form id="contactForm" action="https://formspree.io/f/xwvdrepd" method="post">
                             <label>Name:</label>
                             <br>
-                            <textarea placeholder="Type your name here:" id="name-input" name="name"></textarea>
+                            <textarea placeholder="Type your name here:" id="nameInput" name="name"></textarea>
                             <br>
                             <br>
                             <label>Email:</label>
                             <br>
-                            <input type="email" placeholder="Type the email that you want me to respond to here:" id="email-input" name="email">
+                            <input type="email" placeholder="Type your email here:" id="emailInput" name="email">
                             <br>
                             <br>
                             <label>Message:</label>
                             <br>
-                            <textarea placeholder="Type your question/message here:" id="message-input" name="message"></textarea>
+                            <textarea placeholder="Type your question/message here:" id="messageInput" name="message"></textarea>
                             <br>
+                            <div id="validateMsg"></div>
                             <input type="submit" value="SUBMIT">
                         </form>
                     </div>
@@ -106,7 +104,7 @@
         </section>
         <!--FOOTER-->
         <footer>
-            <p>@UnstableBrute</p>
+            <a href="https://github.com/UnstableBrute">@UnstableBrute</a>
         </footer>
     </div>
 </body>
